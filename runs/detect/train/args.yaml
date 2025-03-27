@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.yaml
-data: config.yaml
+data: C:\Users\User\Documents\GitHub\train-yolov8-custom-dataset-step-by-step-guide\config.yaml
 epochs: 1
 time: null
 patience: 100
