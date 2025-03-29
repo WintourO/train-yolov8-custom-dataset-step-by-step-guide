@@ -1,9 +1,18 @@
+import ultralytics
+import torch
+import torchvision
 from ultralytics import YOLO
+
+print(torch.__version__)
+print(torchvision.__version__)
+print(ultralytics.__version__)
 
 # Load a model
 model = YOLO("yolov8n.yaml")  # build a new model from scratch
+model.to('cuda')
+
 
 # Use the model
-results = model.train(data=r"C:\Users\User\Documents\GitHub\train-yolov8-custom-dataset-step-by-step-guide\local_env\config.yaml", epochs=100)
+results = model.train(data=r"C:\Users\User\Documents\GitHub\train-yolov8-custom-dataset-step-by-step-guide\local_env\config.yaml", epochs=200, workers=0)
 
-  # train the model
+# train the model
