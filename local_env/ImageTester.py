@@ -12,7 +12,7 @@ if not os.path.exists(model_path):
 model = YOLO(model_path)
 
 # Path to the test image
-image_path = r"C:\Users\User\Desktop\SharkTest2.jpg"
+image_path = r"C:\Users\User\Desktop\SharkTest1.jpg"
 
 # Check if image exists
 if not os.path.exists(image_path):
