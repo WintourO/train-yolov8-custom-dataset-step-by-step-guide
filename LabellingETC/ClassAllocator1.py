@@ -1,9 +1,9 @@
 import os
 
-label_dir = r"C:\Users\User\Desktop\DATAV4\train\labels"
+label_dir = r"C:\Users\User\Desktop\DATAV4\valid\labels"
 
 # Define class mappings (old -> new)
-class_mapping = {4: }  # Change '2' (old person/surfer class) to '1'
+class_mapping = {4:1}  # Change '2' (old person/surfer class) to '1'
 
 for filename in os.listdir(label_dir):
     if filename.endswith(".txt"):
