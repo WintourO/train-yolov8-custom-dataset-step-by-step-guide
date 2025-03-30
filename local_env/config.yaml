@@ -1,11 +1,11 @@
 
-path: C:\Users\User\Documents\GitHub\train-yolov8-custom-dataset-step-by-step-guide\data  # dataset root dir
+path: C:\Users\User\Documents\GitHub\train-yolov8-custom-dataset-step-by-step-guide\DATAV3  # dataset root dir
 train: train/images
 val: valid/images
 test: test/images
 
-nc: 4
-names: ['boat', 'person', 'sealion', 'shark']
+nc: 5
+names: ['boat', 'person', 'sealion', 'shark','surfer']
 
 roboflow:
   workspace: d4ms
